@@ -56,95 +56,80 @@ Bu projede üç farklı model yaklaşımı kullanılmıştır:
 
 ---
 
-→ Başlıklar da kod sanılıyor.
-
----
-
-## ✅ Doğru yapı (İSTEDİĞİN GİBİ)
-
-### **Kural**
-- **SADECE komutlar** kod bloğu içinde olacak  
-- Başlıklar ve açıklamalar **dışarıda**
-
----
-
-## ✨ Düzeltilmiş final versiyon (direkt kopyala–yapıştır)
-
-```markdown
 ## 4. Çalıştırma Talimatları
 
-### 4.1 Gerekli Bağımlılıklar
+Bu projede modellerin eğitimi ve çalıştırılması için aşağıdaki adımlar izlenmiştir:
 
-Gerekli Python paketlerini yüklemek için:
+1. **Gerekli Bağımlılıklar**
 
-```bash
+- Projede kullanılan tüm Python paketleri `requirements.txt` dosyasında tanımlanmıştır.
+- Ortam kurulumu aşağıdaki komut ile yapılmaktadır:
+
 pip install -r requirements.txt
 
----
+2. **Çalışma Ortamı**
 
-### 4.3 Model Değerlendirme
+- Tüm modeller Jupyter Notebook ortamında eğitilmiştir.
+- Kullanılan ana notebook dosyası:
 
-Modeller test seti üzerinde aşağıdaki metriklerle değerlendirilmiştir:
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- AUC
+notebooks/derin_ogrenme_final.ipynb
 
-Değerlendirme adımları notebook içerisinde detaylı olarak sunulmuştur.
+3. **Eğitim Süreci**
 
----
+- Scratch CNN eğitimi
+- ResNet50 transfer learning eğitimi
+- DenseNet121 transfer learning eğitimi
 
-### 4.4 Grad-CAM Görselleştirme
+Eğitim adımları notebook içerisinde hücre bazlı olarak detaylı şekilde yer almaktadır.
 
-Model kararlarının açıklanabilirliğini artırmak amacıyla Grad-CAM yöntemi kullanılmıştır.
 
-Grad-CAM çıktıları:
-- Orijinal test görüntüsü
-- Isı haritası (heatmap)
-- Görüntü + ısı haritası bindirmesi
-
-şeklinde notebook içerisinde yer almaktadır.
+çıktılar ile birebir örtüşmektedir.
 
 ---
 
 ## 5. Model Çıktıları
 
-### 5.1 Nicel Metrikler
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- AUC
+Bu bölümde eğitilen modellerden elde edilen nicel sonuçlar ve görsel çıktılar sunulmaktadır.
 
-### 5.2 Örnek Test Çıktıları
-- Test verisi üzerindeki model tahminleri
-- Grad-CAM görselleri
+1. **Nicel Metrikler**
 
-### 5.3 Eğitim Süreci Grafikler
-- Eğitim ve doğrulama loss eğrileri
-- Eğitim ve doğrulama accuracy eğrileri
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score  
+- AUC  
+
+Bu metrikler kullanılarak modellerin performansı karşılaştırılmıştır.
+
+2. **Örnek Test Çıktıları**
+
+- Test verisi üzerindeki model tahminleri  
+- Grad-CAM görselleri  
+
+Bu çıktılar, model davranışlarının görsel olarak analiz edilmesini sağlamaktadır.
+
+3. **Eğitim Süreci Grafikler**
+
+- Eğitim ve doğrulama loss eğrileri  
+- Eğitim ve doğrulama accuracy eğrileri  
+
+Bu grafikler eğitim sürecinin kararlılığını değerlendirmek amacıyla kullanılmıştır.
 
 ---
 
 ## 6. Sonuçlar
 
-- Transfer learning modelleri, scratch CNN modeline kıyasla daha yüksek doğruluk
-  ve daha iyi genelleme performansı göstermiştir.
-- DenseNet121 modeli genel olarak en dengeli sonuçları sunmuştur.
-- Grad-CAM sonuçları, modellerin tümör bölgelerine anlamlı şekilde odaklandığını
-  göstermektedir.
+Elde edilen deneysel sonuçlara göre transfer learning tabanlı modeller, scratch CNN
+modeline kıyasla daha yüksek doğruluk ve daha iyi genelleme performansı göstermiştir.
+Özellikle DenseNet121 modeli, farklı metrikler açısından en dengeli sonuçları sunmuştur.
+Grad-CAM analizleri, modellerin karar verirken tümör bölgelerine anlamlı şekilde
+odaklandığını göstermektedir.
 
 ---
 
 ## 7. Proje Sunumu
 
 Projenin nihai sunum dosyası `presentation/` klasörü altında PDF formatında yer almaktadır.
-Sunumda anlatılan tüm deneyler ve sonuçlar, bu GitHub deposundaki notebook ve
-çıktılar ile birebir örtüşmektedir.
+Sunumda anlatılan tüm deneyler ve elde edilen sonuçlar, bu GitHub deposunda bulunan
+notebook dosyaları ve model çıktıları ile birebir örtüşmektedir.
 
-
-
-Projenin nihai sunum dosyası presentation/ klasörü altında PDF formatında yer almaktadır.
-Sunumda anlatılan tüm deneyler ve sonuçlar, bu GitHub deposundaki notebook ve
-çıktılar ile birebir örtüşmektedir.
