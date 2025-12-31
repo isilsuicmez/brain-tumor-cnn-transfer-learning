@@ -62,6 +62,7 @@ Bu projede üç farklı model yaklaşımı kullanılmıştır:
 
 ```bash
 pip install -r requirements.txt
+
 ### 4.2 Model Eğitimi
 
 Tüm modeller Jupyter Notebook ortamında eğitilmiştir.
