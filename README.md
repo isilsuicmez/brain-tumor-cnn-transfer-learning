@@ -56,26 +56,29 @@ Bu projede üç farklı model yaklaşımı kullanılmıştır:
 
 ---
 
+→ Başlıklar da kod sanılıyor.
+
+---
+
+## ✅ Doğru yapı (İSTEDİĞİN GİBİ)
+
+### **Kural**
+- **SADECE komutlar** kod bloğu içinde olacak  
+- Başlıklar ve açıklamalar **dışarıda**
+
+---
+
+## ✨ Düzeltilmiş final versiyon (direkt kopyala–yapıştır)
+
+```markdown
 ## 4. Çalıştırma Talimatları
 
 ### 4.1 Gerekli Bağımlılıklar
 
+Gerekli Python paketlerini yüklemek için:
+
 ```bash
 pip install -r requirements.txt
-
-
-### 4.1 Gerekli Bağımlılıklar
-
-Tüm modeller Jupyter Notebook ortamında eğitilmiştir.
-
-Kullanılan notebook:
-- `notebooks/derin_ogrenme_final.ipynb`
-
-Notebook içerisinde:
-- Scratch CNN eğitimi
-- ResNet50 transfer learning eğitimi
-- DenseNet121 transfer learning eğitimi  
-adım adım yer almaktadır.
 
 ---
 
