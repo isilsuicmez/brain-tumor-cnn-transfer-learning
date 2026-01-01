@@ -17,8 +17,13 @@ ve farklı model mimarilerinin performansını karşılaştırmaktır.
 ---
 
 ## 2. Kullanılan Veri Seti ve Ön İşleme Adımları
- **Veri Seti:** Beyin MR görüntülerinden oluşan ikili sınıflandırma veri seti  
-  (Tumor / No Tumor).
+ **Kullanılan Veri Seti:** Bu çalışmada Kaggle üzerinde paylaşılan **Brain Tumor MRI Dataset (BR35H)**
+kullanılmıştır. Veri seti, tümör ve tümör olmayan beyin MR görüntülerinden
+oluşan ikili bir sınıflandırma problemine yöneliktir.Veri seti, boyut ve lisans kısıtları nedeniyle bu GitHub deposuna
+doğrudan eklenmemiştir. Veri setine aşağıdaki bağlantı üzerinden erişilebilir:
+
+https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection
+
   
 **Veri Bölme Oranları:**
   - %70 Eğitim (Train)
