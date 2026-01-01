@@ -74,7 +74,7 @@ pip install -r requirements.txt
 - Tüm modeller Jupyter Notebook ortamında eğitilmiştir.
 - Kullanılan ana notebook dosyası:
 
-notebooks/derin_ogrenme_final.ipynb
+notebook/derin_ogrenme_final.ipynb
 
 3. **Eğitim Süreci**
 
@@ -114,6 +114,9 @@ Bu çıktılar, model davranışlarının görsel olarak analiz edilmesini sağl
 - Eğitim ve doğrulama accuracy eğrileri  
 
 Bu grafikler eğitim sürecinin kararlılığını değerlendirmek amacıyla kullanılmıştır.
+Bu projede elde edilen tüm model çıktıları düzenli bir yapı altında  `outputs/` klasörü
+içerisinde toplanmıştır.
+
 
 ---
 
