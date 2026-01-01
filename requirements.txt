@@ -3,7 +3,7 @@ numpy
 pandas
 matplotlib
 scikit-learn
+pillow
 opencv-python
-Pillow
 tqdm
 jupyter
