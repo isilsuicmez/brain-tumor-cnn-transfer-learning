@@ -17,16 +17,19 @@ ve farklı model mimarilerinin performansını karşılaştırmaktır.
 ---
 
 ## 2. Kullanılan Veri Seti ve Ön İşleme Adımları
-- **Veri Seti:** Beyin MR görüntülerinden oluşan ikili sınıflandırma veri seti  
+ **Veri Seti:** Beyin MR görüntülerinden oluşan ikili sınıflandırma veri seti  
   (Tumor / No Tumor).
-- **Veri Bölme Oranları:**
+  
+**Veri Bölme Oranları:**
   - %70 Eğitim (Train)
   - %15 Doğrulama (Validation)
   - %15 Test
-- **Ön İşleme:**
+  
+ **Ön İşleme:**
   - Scratch CNN modeli için: piksel normalizasyonu (`rescale = 1/255`)
   - Transfer learning modelleri için: backbone’a özgü `preprocess_input`
-- **Veri Artırma (Sadece eğitim seti):**
+    
+**Veri Artırma (Sadece eğitim seti):**
   - Döndürme (rotation)
   - Yatay/dikey kaydırma
   - Yakınlaştırma (zoom)
@@ -37,22 +40,21 @@ ve farklı model mimarilerinin performansını karşılaştırmaktır.
 ## 3. Model Mimarisi ve Yaklaşımın Gerekçesi
 Bu projede üç farklı model yaklaşımı kullanılmıştır:
 
-1. **Scratch CNN**
+**Scratch CNN**
    - Sıfırdan eğitilen konvolüsyonel sinir ağı
    - Özellik çıkarımı ve sınıflandırma katmanları birlikte öğrenilmiştir
 
-2. **ResNet50 (Transfer Learning)**
+**ResNet50 (Transfer Learning)**
    - ImageNet üzerinde önceden eğitilmiş model
    - Özellik çıkarıcı katmanlar dondurulmuştur
    - Ortak sınıflandırıcı başlık (head) kullanılmıştır
 
-3. **DenseNet121 (Transfer Learning)**
+**DenseNet121 (Transfer Learning)**
    - ImageNet üzerinde önceden eğitilmiş model
    - ResNet50 ile aynı sınıflandırıcı başlık kullanılarak adil karşılaştırma sağlanmıştır
 
-> **Not:** Transfer learning modellerinde sınıflandırıcı başlık  
-> (Global Average Pooling + Dense + Dropout) scratch CNN modeli ile aynı tutulmuştur.
-> Böylece karşılaştırma yalnızca feature extractor mimarilerinin etkisine dayanmaktadır.
+**Not:** Transfer learning modellerinde sınıflandırıcı başlık (Global Average Pooling + Dense + Dropout) scratch CNN modeli ile aynı tutulmuştur.
+Böylece karşılaştırma yalnızca feature extractor mimarilerinin etkisine dayanmaktadır.
 
 ---
 
@@ -82,8 +84,6 @@ notebooks/derin_ogrenme_final.ipynb
 
 Eğitim adımları notebook içerisinde hücre bazlı olarak detaylı şekilde yer almaktadır.
 
-
-çıktılar ile birebir örtüşmektedir.
 
 ---
 
