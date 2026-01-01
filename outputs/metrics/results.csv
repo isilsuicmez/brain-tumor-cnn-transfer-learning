@@ -1,0 +1,4 @@
+model,accuracy,precision,recall,f1,auc
+Scratch CNN,0.7556,0.7511,0.7644,0.7577,0.8337
+ResNet50 TL,0.9356,0.8920,0.9911,0.9389,0.9924
+DenseNet121 TL,0.9689,0.9689,0.9689,0.9689,0.9947
